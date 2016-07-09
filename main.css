@@ -15,3 +15,17 @@ h1 {
   border: 3px solid blue;
   background: yellow;
 }
+
+.trackOne {
+  background-color: rgba(0, 255, 0, 0.1);
+  height: 200px;
+}
+
+.trackTwo {
+  background-color: rgba(0, 0, 255, 0.1);
+  height: 200px;
+}
+footer {
+  background-color: blue;
+  height: 20px;
+}
