@@ -2,16 +2,21 @@ $(document).on('ready', function(){
 
   function $player(){
     $('body').keyup(function(e) {
-       var moveLength = "+=100px";
+       var moveLength = "+=100px";//length of move per keyup
+       //var keyupCounterOne = 0;// counter for
+       function movePOne(){
+         $( ".playerOne" ).animate({ "left": moveLength }, "fast " );
+       }
+
         if(e.which =='65'){
-          $( ".playerOne" ).animate({ "left": moveLength }, "fast " );
+          movePOne();
         }
     });
 
 
-    $( ".playerTwo" ).click(function() {
-      $( ".playerTwo" ).animate({ "right": "+=50px" }, "slow" );
-    });
+  //  $( ".playerTwo" ).click(function() {
+  //    $( ".playerTwo" ).animate({ "right": "+=50px" }, "slow" );
+  //  });
 
 
 
