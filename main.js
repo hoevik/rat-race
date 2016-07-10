@@ -1,7 +1,7 @@
 $(document).on('ready', function(){
 
   function $player(){
-    $('body').keydown(function(e) {
+    $('body').keyup(function(e) {
 
         if(e.which =='65'){
           $( ".playerOne" ).animate({ "left": "+=50px" }, "fast " );
