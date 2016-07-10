@@ -2,9 +2,9 @@ $(document).on('ready', function(){
 
   function $player(){
     $('body').keyup(function(e) {
-
+       var moveLength = "+=100px";
         if(e.which =='65'){
-          $( ".playerOne" ).animate({ "left": "+=50px" }, "fast " );
+          $( ".playerOne" ).animate({ "left": moveLength }, "fast " );
         }
     });
 
@@ -26,6 +26,8 @@ $(document).on('ready', function(){
 
 // use .finish() and set that as a px value for the finish line
 //might also use the $fx.off method
+
+// add for loop to switch betwtten two buttons while playing, eg. a and s for p1
 
 // backgrouns-size: covered / contain
 
