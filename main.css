@@ -13,12 +13,12 @@ h1 {
   border: 3px solid blue;
   background: yellow;
 }
-.startLeft{
+.playerOne{
   display: block;
   position: absolute;
   left: 0;
   }
-.startRight{
+.playerTwo{
   display: block;
   position: absolute;
   right: 0;
