@@ -9,12 +9,10 @@ $(document).on('ready', function(){
       }
        if(count1>22){
          alert('A winner has no name. Thoug the loosers name is P2');
-
        }
     });
-
   }
-  p1();
+
 
   function p2(){
     var count2=0;
@@ -27,10 +25,17 @@ $(document).on('ready', function(){
         alert('A winner has no name. Thoug the loosers name is P1');
       }
     });
-
   }
-  p2();
+  function $restart(){
+    $('button').on('click', function(){
+      $('.playerOne').css({'left':'0'});
+      $('.playerTwo').css({'right':'0'});
+    })
+  }
 
+  p1();
+  p2();
+  $restart();
 
 
 
