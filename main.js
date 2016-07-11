@@ -1,25 +1,12 @@
 $(document).on('ready', function(){
 
-  function players(){
-    var p1 = ('.playerOne');
-    var p2 = ('.playerTwo');
-
-    $('body').keyup(function move1(e){
-
-      if(e.which =='65'){
-        $(p1).animate({ "left": '+=100px' }, "fast" );
-      }
-    });
-  }
-players();
 
 
 
 
 
-});
 
-/*
+
   function $player(){
     $('body').keyup(function(e) {
        var moveLength = "+=100px";//length of move per keyup
@@ -28,7 +15,7 @@ players();
          $( ".playerOne" ).animate({ "left": moveLength }, "fast " );
        }
 
-         if(i<3 && e.which =='65'){
+         if(e.which =='65'){
            movePOne();
          }
       }
@@ -49,7 +36,7 @@ players();
 
 
 
-  }
+}
   $player();
 
 
