@@ -1,35 +1,24 @@
 $(document).on('ready', function(){
 
-  function p1(){
-    $('body').keyup(function(e){
-      function movePOne(){
-        $( ".playerOne" ).animate({ "left": '+=100px' }, "fast" );
-      }
+  function players(){
+    var p1 = ('.playerOne');
+    var p2 = ('.playerTwo');
+
+    $('body').keyup(function move1(e){
+
       if(e.which =='65'){
-        movePTwo();
+        $(p1).animate({ "left": '+=100px' }, "fast" );
       }
-    });
-p1();
-  function p2(){
-    $('body').keyup(function (e){
-      function movePTwo(){
-        $( ".playerTwo" ).animate({ "right": '+=100px' }, "fast" );
-      }
-
-      if(e.which =='76'){
-        movePTwo();
-      }
-
     });
   }
-p2();
-
+players();
 
 
 
 
 
 });
+
 /*
   function $player(){
     $('body').keyup(function(e) {

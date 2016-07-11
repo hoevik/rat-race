@@ -5,10 +5,6 @@ $(document).on('ready', function(){
     this.name= 'className';
     this.dir= 'direction';
     this.key='key';
-
-    this.move = function (){
-      $('name').css(dir,("+=25px"));
-    }; // end f this.move
   }//end f Player
 
 
@@ -18,15 +14,15 @@ $(document).on('ready', function(){
 
   function movePlayers(p1, p2){
     $('body').keyup(function (e){
-      if ((e.which==p1.key)){
-          p1.move();
+      if ((e.which=='65')){
+          $('.playerOne').css(dir,("+=25px"))
       }
 
     });
   }
-movePlayers();
+  movePlayers();
 
-  }); // end $(document)
+}); // end $(document)
 /*
 $('body').keyup(function game(q){
   var speed = '+=100px';
