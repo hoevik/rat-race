@@ -1,26 +1,32 @@
 $(document).on('ready', function(){
 
   function p1(){
-    var c1=0
+    var count1=0;
     $('body').keyup(function(e){
       if(e.which =='65'){
         $('.playerOne').css("left", ('+=25px'));
+        count1++;
       }
-      c1++;
-      if(c1>3){
-        alert('fucker')
-      }
+       if(count1>23){
+         alert('winner p1');
+       }
     });
 
   }
   p1();
 
   function p2(){
+    var count2=0;
     $('body').keyup(function(e){
       if(e.which =='76'){
         $('.playerTwo').css("right", ('+=25px'));
+        count2++;
+      }
+      if(count2>23){
+        alert('fuck');
       }
     });
+
   }
   p2();
 
