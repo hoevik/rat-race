@@ -3,6 +3,8 @@
 # Racing Game
 The goal of this game was to make two characters race to the center, where the fastest one will be announced as the winner.
 
+P1 move right with keyup 'a', P2 moves left with keyup 'l'.
+
 
 #Technologies Used
 
