@@ -5,6 +5,8 @@ header {
 
 h1 {
   color: green;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .box {
