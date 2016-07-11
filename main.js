@@ -1,12 +1,27 @@
 $(document).on('ready', function(){
 
+  function players(){
+    var p1 = ('.playerOne');
+    var p2 = ('.playerTwo');
+
+    $('body').keyup(function move1(e){
+
+        if(e.which =='65'){
+          $(p1).animate({ "left": '+=100px' }, "fast" );
+
+        }While(position!={left:0})
+
+    });
+  }
+players();
 
 
 
 
 
+});
 
-
+/*
   function $player(){
     $('body').keyup(function(e) {
        var moveLength = "+=100px";//length of move per keyup
@@ -15,7 +30,7 @@ $(document).on('ready', function(){
          $( ".playerOne" ).animate({ "left": moveLength }, "fast " );
        }
 
-         if(e.which =='65'){
+         if(i<3 && e.which =='65'){
            movePOne();
          }
       }
@@ -36,7 +51,7 @@ $(document).on('ready', function(){
 
 
 
-}
+  }
   $player();
 
 

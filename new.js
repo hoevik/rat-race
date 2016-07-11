@@ -7,8 +7,9 @@ $(document).on('ready', function(){
         $('.playerOne').css("left", ('+=25px'));
         count1++;
       }
-       if(count1>23){
-         alert('winner p1');
+       if(count1>22){
+         alert('A winner has no name. Thoug the loosers name is P2');
+
        }
     });
 
@@ -22,21 +23,14 @@ $(document).on('ready', function(){
         $('.playerTwo').css("right", ('+=25px'));
         count2++;
       }
-      if(count2>23){
-        alert('fuck');
+      if(count2>22){
+        alert('A winner has no name. Thoug the loosers name is P1');
       }
     });
 
   }
   p2();
 
-
-
-
-  $('button').on("click", function(e){ // reset button works by removing classes, values, and text
-      $(".playerOne").css("left ",("0"));
-
-    });
 
 
 

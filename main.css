@@ -33,3 +33,15 @@ footer {
   background-color: rgba(0, 0, 255, 0.1);
   height: 210px;
 }
+
+button {
+  display: block;
+  align-content: center;
+}
+
+.track1{
+  border-right: solid black 20px;
+}
+h2{
+  text-align: center;
+}
